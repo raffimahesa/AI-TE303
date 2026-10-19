@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_282059d4253d8c965f4bb7611a89bb7e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_282059d4253d8c965f4bb7611a89bb7e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_282059d4253d8c965f4bb7611a89bb7e = L.map(
+                "map_282059d4253d8c965f4bb7611a89bb7e",
+                {
+                    center: [-6.9742, 107.6315],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_282059d4253d8c965f4bb7611a89bb7e);
+
+            
+
+        
+    
+            var tile_layer_56844cbd6256fda55902ea6cdf1a8d37 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_56844cbd6256fda55902ea6cdf1a8d37.addTo(map_282059d4253d8c965f4bb7611a89bb7e);
+        
+    
+            var locate_control_00d1a18db931972d00c85260c7352881 = L.control.locate(
+                {}
+            ).addTo(map_282059d4253d8c965f4bb7611a89bb7e);
+            
+        
+    
+            var poly_line_ba7fe28824c655be661918eb9ac90601 = L.polyline(
+                [[-6.974023, 107.632526], [-6.974023, 107.632526], [-6.974022, 107.632504], [-6.974011, 107.63204], [-6.974014, 107.631689], [-6.974042, 107.631681], [-6.974066, 107.631664], [-6.974084, 107.63164], [-6.974093, 107.631612], [-6.974307, 107.631613], [-6.974842, 107.631613], [-6.974999, 107.631614], [-6.975165, 107.631616], [-6.975216, 107.631616], [-6.975272, 107.631617], [-6.975296, 107.631618], [-6.975335, 107.631619], [-6.976016, 107.631595], [-6.976085, 107.6316], [-6.976208, 107.631608], [-6.976287, 107.631608], [-6.976739, 107.631618], [-6.976818, 107.63162], [-6.976851, 107.631613], [-6.976902, 107.631583], [-6.977017, 107.63145], [-6.977124, 107.6313], [-6.977129, 107.631268], [-6.977126, 107.631043], [-6.977129, 107.630588], [-6.977131, 107.630304], [-6.977127, 107.630066], [-6.977107, 107.629263], [-6.976958, 107.629142], [-6.976873, 107.629095], [-6.976778, 107.629078], [-6.976061, 107.62907], [-6.975385, 107.629067], [-6.975299, 107.629067], [-6.975233, 107.629067], [-6.974262, 107.629086], [-6.974142, 107.629086], [-6.974062, 107.629117], [-6.974007, 107.629173], [-6.97398, 107.629231], [-6.973913, 107.629232], [-6.973509, 107.62923], [-6.973282, 107.629233], [-6.973137, 107.629226], [-6.972798, 107.62922], [-6.972779, 107.629211], [-6.972767, 107.629199], [-6.972683, 107.629087], [-6.972661, 107.629068], [-6.972632, 107.629063], [-6.972428, 107.629059], [-6.97224, 107.629067], [-6.972065, 107.629068], [-6.97206, 107.630261], [-6.971974, 107.630264], [-6.971936, 107.630265], [-6.971917, 107.630266], [-6.971804, 107.630412], [-6.971702, 107.630505], [-6.971683, 107.630522], [-6.971533, 107.630556], [-6.971505, 107.630567], [-6.971439, 107.630609], [-6.971438, 107.630306], [-6.971445, 107.630285], [-6.971458, 107.630269], [-6.971577, 107.630254], [-6.971588, 107.630244], [-6.97159, 107.630225], [-6.97159, 107.630225], [-6.971553, 107.629341], [-6.97159, 107.630225], [-6.971588, 107.630244], [-6.971577, 107.630254], [-6.971458, 107.630269], [-6.971445, 107.630285], [-6.971438, 107.630306], [-6.971439, 107.630609], [-6.971505, 107.630567], [-6.971533, 107.630556], [-6.971683, 107.630522], [-6.971702, 107.630505], [-6.971804, 107.630412], [-6.971917, 107.630266], [-6.971936, 107.630265], [-6.971974, 107.630264], [-6.97206, 107.630261], [-6.972065, 107.629068], [-6.97224, 107.629067], [-6.972428, 107.629059], [-6.972632, 107.629063], [-6.972661, 107.629068], [-6.972683, 107.629087], [-6.972767, 107.629199], [-6.972779, 107.629211], [-6.972798, 107.62922], [-6.973137, 107.629226], [-6.973282, 107.629233], [-6.973509, 107.62923], [-6.973913, 107.629232], [-6.97398, 107.629231], [-6.974007, 107.629173], [-6.974062, 107.629117], [-6.974142, 107.629086], [-6.974262, 107.629086], [-6.975233, 107.629067], [-6.975253, 107.629827], [-6.975254, 107.63009], [-6.975257, 107.630324], [-6.97526, 107.631077], [-6.975271, 107.631575], [-6.975272, 107.631617], [-6.975266, 107.631934], [-6.975254, 107.631961], [-6.975027, 107.632252], [-6.974954, 107.632334], [-6.974819, 107.63247], [-6.974728, 107.632555], [-6.974668, 107.63256], [-6.974623, 107.632568], [-6.974507, 107.632588], [-6.974179, 107.632637], [-6.974032, 107.632677], [-6.973967, 107.632711], [-6.973884, 107.632769], [-6.973788, 107.632852], [-6.973674, 107.632967], [-6.973403, 107.633255], [-6.973287, 107.633387], [-6.973218, 107.633459], [-6.973124, 107.633558], [-6.972771, 107.633925], [-6.972699, 107.633989], [-6.972646, 107.634022], [-6.972619, 107.634039], [-6.972585, 107.634012], [-6.972543, 107.634002], [-6.972473, 107.633968], [-6.972397, 107.633923], [-6.972337, 107.633882], [-6.972221, 107.63373], [-6.972155, 107.633602], [-6.972103, 107.6336], [-6.972086, 107.633598], [-6.972073, 107.633596], [-6.972039, 107.633592], [-6.971181, 107.633507], [-6.971064, 107.633503], [-6.970957, 107.633514], [-6.970915, 107.633523], [-6.970874, 107.633532], [-6.970801, 107.633548], [-6.970697, 107.633589], [-6.970583, 107.63366], [-6.970495, 107.633707], [-6.970106, 107.633934], [-6.969973, 107.634012], [-6.969799, 107.634105], [-6.969597, 107.634199], [-6.9694, 107.634271], [-6.968919, 107.634409], [-6.968972, 107.634635], [-6.969022, 107.634783], [-6.96903, 107.634802], [-6.969454, 107.634704]],
+                {"bubblingMouseEvents": true, "color": "#1a73e8", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#1a73e8", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.85, "smoothFactor": 1.0, "stroke": true, "weight": 6}
+            ).addTo(map_282059d4253d8c965f4bb7611a89bb7e);
+        
+    
+            var marker_5274a8c84231cd8ed3fb481637298c62 = L.marker(
+                [-6.9742, 107.6315],
+                {
+}
+            ).addTo(map_282059d4253d8c965f4bb7611a89bb7e);
+        
+    
+            var icon_dd9df123379e59a060ed19e2f2f94765 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_5274a8c84231cd8ed3fb481637298c62.bindTooltip(
+                `<div>
+                     Lokasi Saya
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5274a8c84231cd8ed3fb481637298c62.setIcon(icon_dd9df123379e59a060ed19e2f2f94765);
+            
+    
+            var marker_4c39ced362fd32e741f0db1545569b57 = L.marker(
+                [-6.9733, 107.6304],
+                {
+}
+            ).addTo(map_282059d4253d8c965f4bb7611a89bb7e);
+        
+    
+            var icon_e40606c01870286461fe74af9a68613f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_4c39ced362fd32e741f0db1545569b57.bindTooltip(
+                `<div>
+                     Universitas Telkom
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4c39ced362fd32e741f0db1545569b57.setIcon(icon_e40606c01870286461fe74af9a68613f);
+            
+    
+            var marker_c47e3bea537d24eff18cfe88fcb944f7 = L.marker(
+                [-6.9695, 107.6345],
+                {
+}
+            ).addTo(map_282059d4253d8c965f4bb7611a89bb7e);
+        
+    
+            var icon_a7bf6a9e2594ef545d412a67a9a4dbcb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_c47e3bea537d24eff18cfe88fcb944f7.bindTooltip(
+                `<div>
+                     Simpang Sukapura (3.61 km)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c47e3bea537d24eff18cfe88fcb944f7.setIcon(icon_a7bf6a9e2594ef545d412a67a9a4dbcb);
+            
+</script>
+</html>
