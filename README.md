@@ -1,20 +1,15 @@
 # AI-TE103 
 
-Tugas Mata Kuliah Kecerdasan Buatan – Implementasi Search Algorithm dan Expert System.
+Tugas Mata Kuliah Kecerdasan Buatan
 
 ## Introduction
 
-Program ini membantu mahasiswa menemukan rute terbaik antar gedung di kampus.
-1. **Search Algorithm (A\* dan BFS)**
-   Kampus dimodelkan sebagai graf: gedung sebagai node, jalur sebagai edge. A\* mencari rute dengan biaya terendah ke setiap gedung yang sesuai dan sedang buka, lalu memilih yang terbaik. Heuristiknya adalah jarak Euclidean. BFS dipakai sebagai pembanding jumlah node yang dieksplorasi.
+Program ini merupakan tugas Mata Kuliah Kecerdasan Buatan
+1. **Search Algorithm**
+   
 
-2. **Expert System (Forward Chaining)**
-   Menerima input berupa kebutuhan pengguna (makan, ibadah, membaca, administrasi, olahraga, praktikum komputer, kuliah) dan kondisi (hujan, jam, kebutuhan kursi roda). Dari fakta tersebut, sistem menurunkan kategori tujuan, batasan rute, dan saran melalui aturan (rule) IF-THEN. Jejak penalarannya ditampilkan ke pengguna.
-
-**Batasan yang diperhitungkan saat pencarian:**
-- Saat hujan, jalur tanpa atap diberi biaya lebih besar (x2).
-- Jika pengguna butuh akses kursi roda, jalur dengan tangga dilewati.
-- Gedung yang tutup pada jam tersebut tidak dijadikan tujuan.
+2. **Expert System**
+   
 
 ### Anggota Kelompok
 
@@ -30,34 +25,24 @@ Program ini membantu mahasiswa menemukan rute terbaik antar gedung di kampus.
 AI-TE103/
 ├── README.md
 ├── requirements.txt
-├── main.py              # program utama 
-├── search.py            # A* dan BFS
-├── expert_system.py     # rule base dan forward chaining
-├── data/
-│   └── campus.json      # data gedung dan jalur kampus
-└── screenshots/
-    └── running.png
+├── main.py              
+├── search.py            
+├── expert_system.py     
 ```
 
 ## Requirements
 
 - Python 3.10 
-- Tidak ada library eksternal (hanya library standar Python: `json`, `math`, `heapq`, `collections`, `datetime`)
 
-Cek versi Python:
-
-```bash
-python --version
-```
 
 ## How to Use
 
 1. Clone repository:
    ```bash
-   git clone https://github.com/<username>/AI-TE103.git
-   cd AI-TE103
+   git clone https://github.com/<username>/AI-TE503.git
+   cd AI-TE503
    ```
-2. (Opsional) Install dependensi:
+2. Install dependensi(optional):
    ```bash
    pip install -r requirements.txt
    ```
@@ -66,14 +51,9 @@ python --version
    python main.py
    ```
 4. Ikuti instruksi di terminal:
-   - Pilih nomor lokasi awal
-   - Pilih nomor kebutuhan
-   - Masukkan jam (0-23), atau kosongkan untuk memakai jam sekarang
-   - Jawab `y` atau `n` untuk kondisi hujan dan kebutuhan kursi roda
-5. Program menampilkan penalaran expert system, tujuan terbaik, rute, biaya rute, dan perbandingan dengan BFS.
+   - a
+5. Program menampilkan penalaran expert system dan search
 
-### Mengubah Data Kampus
+### Mengubah Data 
 
-Edit `data/campus.json`:
-- `nodes`: nama gedung, koordinat `x`/`y` (meter), `kategori`, dan `jam_buka`
-- `edges`: `[gedung_a, gedung_b, beratap, ramah_kursi_roda]`
+Edit 
