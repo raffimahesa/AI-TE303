@@ -1,5 +1,3 @@
-"""Modul Environment & Message Bus untuk komunikasi Multi-Agent System. (Dev: Sargi)"""
-
 
 class Message:
     """Representasi pesan yang dikirim antar agen di dalam sistem."""
